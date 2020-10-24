@@ -28,9 +28,9 @@ def get_code(type):
 # 发送邮件的函数
 def send_mail(email, content):
     # 发件人邮箱账号
-    my_sender = '1559492576@qq.com'
+    my_sender = '******@qq.com'
     # 发件人邮箱密码
-    my_pass = "rjvpdvunuooribfh"
+    my_pass = "************"
     # 收件人邮箱账号
     my_user = email
     # 括号里包括邮件主要内容、编码方式
@@ -38,7 +38,7 @@ def send_mail(email, content):
     # 括号里的对应发件人邮箱昵称、发件人邮箱账号
     msg['From'] = formataddr(["【爱特工作室】", my_sender])
     # 括号里的对应收件人邮箱昵称、收件人邮箱账号
-    msg['To'] = formataddr(["亲爱的海大新生", my_user])
+    msg['To'] = formataddr(["亲爱的新生", my_user])
     # 邮件的主题，也可以说是标题
     msg['Subject'] = "【爱特工作室验证码】"
     # 发件人邮箱中的SMTP服务器，端口是465
@@ -67,8 +67,8 @@ content_jh = '''
 comment_ip_dict = {}
 code_ip_dict = {}
 #
-ac_ip = ['111.15.74.105', '192.168.1.3', "223.80.203.45", "117.136.92.4", "111.32.65.210"]
-b_ip = ["120.204.17.70", "183.192.164.90", "183.192.164.85", "183.192.164.97", "120.204.17.73"]
+ac_ip = ['*******"]
+b_ip = ["******"]
 
 
 def get_ip(request):
